@@ -30,3 +30,6 @@ configuration relevant for your application.
 
 ## Layout
 The app skeleton uses a subset of [Foundation](http://foundation.zurb.com/) CSS framework by default. You can, however, replace it with any other library or custom styles.
+
+## Created by
+Anuar Delabahan :)
