@@ -1,57 +1,71 @@
-<?php
-/**
- * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- *
- * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @since         0.10.0
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
- */
-
-$cakeDescription = 'CakePHP: the rapid development php framework';
-?>
 <!DOCTYPE html>
-<html>
-<head>
-    <?= $this->Html->charset() ?>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        <?= $cakeDescription ?>:
-        <?= $this->fetch('title') ?>
-    </title>
-    <?= $this->Html->meta('icon') ?>
+<html lang="en" class="app">
+    <head>
+        <?php
+        echo $this->Html->charset('utf-8');
+        echo $this->Html->css(['bootstrap', 'animate', 'font-awesome', 'icon', 'font', 'app', 'Cutom-backand', 'waves-effect', 'lightbox', 'alertify', 'toastr', 'toastr.min']); //, 'daterangepicker'
+        echo $this->Html->css([/* 'datatables', */ 'chosen', 'october/developer.css']);
+        echo $this->Html->css(['datatable-material.min', 'datatable-material-main.min']); // new databable css 
+        echo $this->Html->css(['jquery-ui', 'jquery-ui-timepicker-addon.min']);
+//      echo $this->Html->css(['bootstrap', 'animate', 'font-awesome', 'icon', 'font', 'app', 'Cutom-backand', 'waves-effect', 'alertify', 'toastr']); //, 'daterangepicker'
+//      echo $this->Html->css(['datatables', '../js/chosen/chosen', '../js/lightbox/lightbox']);
 
-    <?= $this->Html->css('base.css') ?>
-    <?= $this->Html->css('cake.css') ?>
+        echo $this->Html->meta('favicon.ico', '/img/favicon.ico', ['type' => 'icon']);
+        echo $this->Html->meta('description', 'app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav');
+        echo $this->Html->meta('viewport', 'width=device-width, initial-scale=1, maximum-scale=1');
+        echo $this->Html->script(['jquery.min', 'bootstrap', 'app', 'app.plugin', 'slimscroll/jquery.slimscroll.min.js', 'sortable/jquery.sortable.js', 'chosen/chosen.jquery.min', 'alert/alertify.min', 'toastr/toastr.min']); //, 'datepicker/bootstrap-datepicker'
+        echo $this->Html->script(['waves-effects']);
+        echo $this->Html->script(['datatables/jquery.dataTables.min', 'datatables/listbox', 'datatables/dataTables.rowsGroup.js', 'common']); //, 'datatables/demo','jquery.ui.widget','jquery.fileupload'
+        echo $this->Html->script(['jquery-ui.js', 'jquery-ui-timepicker-addon']);
+        ?>
 
-    <?= $this->fetch('meta') ?>
-    <?= $this->fetch('css') ?>
-    <?= $this->fetch('script') ?>
-</head>
-<body>
-    <nav class="top-bar expanded" data-topbar role="navigation">
-        <ul class="title-area large-3 medium-4 columns">
-            <li class="name">
-                <h1><a href=""><?= $this->fetch('title') ?></a></h1>
-            </li>
-        </ul>
-        <div class="top-bar-section">
-            <ul class="right">
-                <li><a target="_blank" href="http://book.cakephp.org/3.0/">Documentation</a></li>
-                <li><a target="_blank" href="http://api.cakephp.org/3.0/">API</a></li>
-            </ul>
-        </div>
-    </nav>
-    <?= $this->Flash->render() ?>
-    <div class="container clearfix">
-        <?= $this->fetch('content') ?>
-    </div>
-    <footer>
-    </footer>
-</body>
+        <title>CRUD cakephp 3.6</title>    
+        <noscript>
+        <?php
+        if ($this->request->action != "enableJavascript") {
+            ?>
+            <meta http-equiv="refresh" content="0;URL='<?= $this->Url->build('/enable-javascript') ?>'">
+            <?php
+        }
+        ?>
+        </noscript>
+    </head>
+
+    <body class="" >
+        <div id="background-overlay"></div>
+        <div id="loadingGIF"></div>
+
+        <section class="vbox">
+            <header class="bg-white header header-md navbar navbar-fixed-top-xs box-shadow">
+                <div id="header-inner">
+                    <?= $this->element('user-header') ?>
+                </div>
+            </header>
+            <section>
+                <section class="hbox stretch">
+                    <aside id="nav" class="bg-blue bg-aside aside-md hidden" > 
+
+                    </aside>
+                    <?= $this->Flash->render() ?>
+                    <section id="content">
+                        <?= $this->fetch('content') ?>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <script type="text/javascript">
+            var loginUrl = "<?= $this->Url->build('/users/login_october', true) ?>";
+            var ajaxCallUrl = "<?= $this->Url->build('/app/ajax-call', true) ?>";
+        </script> 
+        <?php
+//        echo $this->Html->script(['jquery.min', 'bootstrap', 'app', 'app.plugin', 'slimscroll/jquery.slimscroll.min.js', 'sortable/jquery.sortable.js', 'chosen/chosen.jquery.min', 'alert/alertify.min', 'toastr/toastr.min']); //, 'datepicker/bootstrap-datepicker'
+        echo $this->Html->script(['lightbox/lightbox']);
+//        echo $this->Html->script(['datatables/jquery.dataTables.min', 'datatables/listbox']); //, 'datatables/demo','jquery.ui.widget','jquery.fileupload'
+        ?>  
+    </body>
+    <script type="text/javascript">
+        lightbox.option({
+            albumLabel: ''
+        });
+    </script>
 </html>
