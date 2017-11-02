@@ -1,0 +1,98 @@
+.dashboard {
+    background-image:url(../img/icon/main-icon/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.dashboard-accept-stock {
+    width: 36px;
+    height: 36px;
+    background-position: -10px -10px;
+}
+
+.dashboard-dashboard {
+    width: 36px;
+    height: 36px;
+    background-position: -66px -10px;
+}
+
+.dashboard-list {
+    width: 36px;
+    height: 36px;
+    background-position: -122px -10px;
+}
+
+.dashboard-my-shed {
+    width: 36px;
+    height: 36px;
+    background-position: -10px -66px;
+}
+
+.dashboard-orders {
+    width: 36px;
+    height: 36px;
+    background-position: -66px -66px;
+}
+
+.dashboard-products {
+    width: 36px;
+    height: 36px;
+    background-position: -122px -66px;
+}
+
+.dashboard-recycling {
+    width: 36px;
+    height: 36px;
+    background-position: -10px -122px;
+}
+
+.dashboard-reports {
+    width: 36px;
+    height: 36px;
+    background-position: -66px -122px;
+}
+
+.dashboard-retailers {
+    width: 36px;
+    height: 36px;
+    background-position: -122px -122px;
+}
+
+.dashboard-return {
+    width: 36px;
+    height: 36px;
+    background-position: -178px -10px;
+}
+
+.dashboard-stock {
+    width: 36px;
+    height: 36px;
+    background-position: -178px -66px;
+}
+
+.dashboard-storage {
+    width: 36px;
+    height: 36px;
+    background-position: -178px -122px;
+}
+
+.dashboard-store {
+    width: 36px;
+    height: 36px;
+    background-position: -10px -178px;
+}
+
+.dashboard-tablet {
+    width: 36px;
+    height: 36px;
+    background-position: -66px -178px;
+}
+
+.dashboard-users {
+    width: 36px;
+    height: 36px;
+    background-position: -122px -178px;
+}
+
+
+

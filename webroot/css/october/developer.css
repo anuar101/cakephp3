@@ -1,0 +1,26 @@
+/*.user-login-wrapper {
+    background: rgba(0, 0, 0, 0) url("../../img/login-bg/banner.png") no-repeat scroll 0 0 / 100% 100%;    
+}*/
+
+input[type="checkbox"]:checked + label.custom-checkbox {
+    background: rgba(0, 0, 0, 0) url("../../img/login-bg/banner-checkbox-checked.png") repeat scroll 0 0;    
+}
+input[type="checkbox"] + label.custom-checkbox {
+    background: rgba(0, 0, 0, 0) url("../../img/october/user-login/checkbox1.png") no-repeat scroll 0 0;   
+}
+/* css for cakephp validation */
+.error-message{ color: #a94442 !important }
+
+@media all and (min-width: 320px) and (max-width: 1199px) {
+    .navbar-nav .open.hover-class .dropdown-menu {
+        background: #00a33f !important;
+        border-radius: none;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        margin-top: -7px !important;
+        padding-bottom: 0px;
+    }
+}
+.nopadding{
+    padding: 0px !important;
+}

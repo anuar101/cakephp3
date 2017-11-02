@@ -1,0 +1,504 @@
+/*html, body {
+	height: 100%
+}
+.bill-table thead tr td {
+	background: #f8f8f8 !important;
+}
+.popup .modal-header {
+	background: #172c48;
+	color: #fff;
+	padding: 5px;
+}
+.popup .modal-header button.close {
+	padding: 8px;
+	color: #fff;
+	opacity: 1
+}
+nav .line {
+	margin: 0px auto;
+	background: #1f3451;
+}
+.line-inner {
+	margin: 0px auto;
+	border-bottom: 1px solid #152740;
+}
+.bg-aside {
+	background: linear-gradient(180deg, #192f4d, #061325);
+	background-size: 400% 400%;
+	-webkit-animation: bg-aside 30s ease infinite;
+	-moz-animation: bg-aside 30s ease infinite;
+	animation: bg-aside 30s ease infinite;
+ @-webkit-keyframes bg-aside {
+ 0% {
+background-position:50% 0%
+}
+ 50% {
+background-position:51% 100%
+}
+ 100% {
+background-position:50% 0%
+}
+}
+@-moz-keyframes bg-aside {
+ 0% {
+background-position:50% 0%
+}
+ 50% {
+background-position:51% 100%
+}
+ 100% {
+background-position:50% 0%
+}
+}
+@keyframes bg-aside {
+ 0% {
+background-position:50% 0%
+}
+ 50% {
+background-position:51% 100%
+}
+ 100% {
+background-position:50% 0%
+}
+}
+}
+.bg-aside li a {
+	color: #8aa6cc;
+	transition: all 0.5s ease-in-out 1s;
+}
+.bg-aside li a:hover {
+	color: #fff;
+	background: #15a244;
+	transition: all 1s ease-in-out 1.5s;
+}
+.bg-aside li a:focus {
+	color: #fff;
+	background: #15a244;
+	transition: all 1s ease-in-out 1.5s;
+}
+.bg-aside li a:focus i {
+	color: #fff;
+	background: #15a244;
+	transition: all 1s ease-in-out 1.5s;
+}
+.bg-aside li a:focus span {
+	color: #fff;
+}
+.bg-aside li a:hover i {
+	color: #fff;
+}
+.bg-aside li a:focus {
+	color: #000;
+}
+.custome-header .panel-heading {
+	background: #fff !important
+}
+.manual-search {
+	width: 200px;
+	display: inline-block;
+	font-weight: normal;
+}
+.custome-header .panel-heading {
+	color: #000;
+	font-family: "Open Sans", sans-serif !important;
+	font-size: 14px;
+	font-weight: 600;
+}
+.main-table tr th {
+	background: #15a244 !important;
+	color: #fff;
+}
+.main-table > thead th {
+	border-right: 1px solid #40bd69 !important;
+}
+.panel-footer {
+	background: #fff !important;
+}
+.media-button {
+	display: table-cell;
+	vertical-align: middle;
+}
+.heading-wrapper {
+	padding: 15px
+}
+.heading {
+	font-size: 24px;
+}
+nav ul li i {
+	font-size: 16px;
+}
+.f-s-20 {
+	font-size: 20px;
+}
+.home-table tr th {
+	background: #eaeef4 !important;
+}
+.home-panel h3 {
+	margin: 10px 0px;
+	font-size: 20px;
+	color: #fff
+}
+/*.active-btn{background:#071528;}*/
+
+.active-btn {
+	background: #15a244;
+	color: #fff;
+}
+.active-new {
+	background: #15a244;
+}
+.active-new .i-docs {
+	color: #fff;
+}
+.active-new .invent {
+	color: #fff;
+}
+.active-new i {
+	color: none
+}
+.active-new span {
+	color: none;
+}
+.active-dker {
+	background: #000;
+}
+.active-btn i {
+	color: #fff;
+}
+.active-btn span {
+	color: #fff;
+}
+.badge {
+	color: #fff;
+	font-weight: normal;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.panel-custom {
+	margin-top: 20px;
+}
+.panel-custom .panel-heading {
+	background: #152a45;
+	color: #fff;
+}
+.full-width {
+	width: 85%;
+}
+
+@media all and (min-width:300px) and (max-width:767px) {
+.full-width {
+	width: 60%;
+}
+.form-main-heading {
+	width: 100% !important;
+}
+.form-main-heading-popup {
+	width: 100% !important;
+}
+}
+
+@media all and (min-width:768px) and (max-width:1199px) {
+.full-width {
+	width: 80%;
+}
+.form-main-heading {
+	width: 40% !important;
+}
+.form-main-heading-popup {
+	width: 40% !important
+}
+}
+
+@media all and (min-width:1200px) and (max-width:1400px) {
+.full-width-form.col-lg-10 {
+	width: 100%
+}
+.full-width-form.col-lg-offset-1 {
+	margin-left: 0px;
+}
+.form-main-heading {
+	width: 20% !important;
+}
+.form-main-heading-popup {
+	width: 20% !important
+}
+}
+.form-main-heading {
+	background: #f9fafc;
+	width: 15%;
+	padding: 15px;
+	color: #000;
+}
+.form-main-heading-popup {
+	background: #f9fafc;
+	width: 25%;
+	padding: 15px;
+	color: #000;
+}
+.table-bordered thead {
+	border-top: 1px solid #ddd;
+}
+.table-bordered thead tr th {
+	background: #15a244;
+	color: #fff;
+	border-right: 1px solid #4db87d !important;
+}
+.bg-ulralight {
+	background: #f9fafc;
+}
+.btn-green {
+	background: #15a244;
+	color: #fff;
+}
+.btn-green:hover {
+	background: #11953d;
+	color: #fff;
+}
+.btn-green:focus {
+	background: #118f3b;
+	color: #fff;
+}
+.btn-green:active {
+	background: #15a244;
+	color: #fff;
+}
+.order-info tr td {
+	background: #fff;
+}
+.order-info-popup table {
+	margin-bottom: 0px;
+}
+.media-body-1 {
+	display: table-cell;
+	vertical-align: middle;
+}
+.btn-blue {
+	background: #152944;
+	color: #fff;
+}
+.btn-blue:hover {
+	background: #102138;
+	color: #fff;
+}
+.btn-blue:focus {
+	background: #102138;
+	color: #fff;
+}
+.btn-blue:active {
+	background: #102138;
+	color: #fff;
+}
+#kadir ul {
+	margin-bottom: 0px;
+}
+#kadir label {
+	margin-bottom: 0px;
+}
+ .form-control::-moz-placeholder {
+ color: #555;
+ opacity: 1;
+}
+.date-arrange {
+	min-width: 150px;
+	float: left;
+}
+
+@media all and (min-width:300px) and (max-width:1199px) {
+.date-arrange {
+	min-width: auto;
+	float: none;
+}
+}
+.order-info-popup .modal-body {
+	background: #f1f1f1;
+}
+.smart-panel.panel {
+	min-height: 382px;
+}
+.inner-menu {
+	background: #071528;
+}
+.wrap-normal {
+	white-space: normal !important;
+}
+.bg-green {
+	background: #15a244;
+	color: #fff;
+}
+.line-dashed {
+	border-bottom: 1px dashed #c1c1c1;
+}
+.container-table {
+	display: table;
+	height: 100%;
+}
+.vertical-center-row {
+	display: table-cell;
+	vertical-align: middle;
+}
+.padder-xl {
+	padding: 30px 0px;
+}
+.bg-login {
+	background: url(../images/login-bg/v1.png) no-repeat scroll center center;
+	background-size: cover;
+}
+.login-wrapper {
+	width: 40%;
+	margin: 0 auto;
+}
+
+@media all and (min-width:340px) and (max-width:1199px) {
+.login-wrapper {
+	width: 100%;
+}
+}
+.chosen-container {
+	width: 100% !important
+}
+.bg-light-blue {
+	background: #f8faff;
+}
+.product-img-add {
+	border: 1px solid #ccc;
+	background: #fff;
+	padding: 5px;
+	margin-right: 10px;
+	display: inline-block;
+}
+.list-img {
+	width: 100px;
+	height: 100px;
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+.list-img img {
+	width: 100%;
+	height: 100%;
+}
+.list-img-accessoris {
+	width: 200px;
+	height: 80px;
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+.list-img-accessoris img {
+	width: 100%;
+	height: 100%;
+}
+.l-h-3x {
+	line-height: 35px;
+}
+.notification-wrapper {
+	max-height: 400px;
+	overflow: auto;
+}
+
+
+
+
+/*--------------------------New changes---------------------*/
+
+.main-dashboard-wrapper{background:url(../images/login-bg/banner.png) no-repeat scroll center top; width:100%; height:100%; background-size:cover;}
+.h-40 {height:40px;}
+.box {width:100%; height:150px; display:table; border-radius:10px;
+
+background:#15a244;
+transition:all 0.2s ease-in-out 0.1s;
+transform:scale(1);
+
+}
+
+.box-extra {width:100%; height:150px; display:table; border-radius:10px;
+
+background:transparent;
+transition:all 0.2s ease-in-out 0.1s;
+transform:scale(1);
+
+}
+
+.box:hover {background:#fff; transform:scale(1.10);}
+
+.dashboard-heading {font-size:18px; color:#fff; margin-left:15px;}
+
+.col-xs-15 {
+   display:table;
+   height:100%;
+    width: 10%;
+	float:left;
+}
+
+
+.col-xs-15 a{
+   display:table-cell;
+   vertical-align:middle;
+}
+
+
+.col-xs-15, .col-sm-15, .col-md-15, .col-lg-15 {
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.box-content .db-icon {font-size:20px; color:#fff;}
+
+
+
+.db-round {color:#192f4d;}
+
+.box:hover .box-content p {font-size:18px; color:#000; font-weight:400;}
+
+.box-content p {font-size:15px; color:#fff; font-weight:400;}
+
+.box-content {display:table-cell; vertical-align:middle;}
+
+.m-10 {margin:10px 0px;}
+
+
+@media all and (min-width:300px) and (max-width:767px){
+	
+	
+	.col-xs-15 {
+    float: left;
+    width: 50%;
+}
+
+
+	
+	
+	}
+	
+@media all and (min-width:768px) and (max-width:1199px){
+	
+	
+	.col-xs-15 {
+    float: left;
+    width: 33.33%;
+}
+}
+
+@media all and (min-width:1200px) and (max-width:1400px){
+	
+	
+	.col-xs-15 {
+    float: left;
+    width: 13%;
+}
+	
+	
+	}
+
+
+.padder-dashboard {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.amount-digits {position:absolute; right:5px; bottom:5px;}
+
+.ul-wrapper {width: 100%; text-align: center; vertical-align: middle; display: table; height: 100%; margin:0 auto}
+.li-wrapper{vertical-align: middle; height: 100%; display: table-cell !important; width: 100% !important;}
+.box-size {width:10%;}
+.user-type {padding:20px; color:#000; font-weight:bold; font-size:14px;}
